@@ -87,7 +87,24 @@ const Ruleta: React.FC = () => {
   return (
     <div className="relative flex flex-col w-full">
       {showConfetti && (
-        <Confetti width={window.innerWidth} height={window.innerHeight} />
+        <Confetti
+          width={window.innerWidth}
+          height={window.innerHeight}
+          numberOfPieces={1500} // Aumenta la cantidad de confetti
+          gravity={0.5} // Cae más lento
+          tweenDuration={4000} // Dura más tiempo
+          recycle={false} // Evita que el confetti se reinicie automáticamente
+          wind={0.01} // Añade un ligero viento hacia la derecha
+          colors={[
+            '#FF0000',
+            '#FFFF00',
+            '#00FF00',
+            '#0000FF',
+            '#FF00FF',
+            '#00FFFF'
+          ]}
+          opacity={0.9} // Hace el confetti un poco más transparente
+        />
       )}
       <div className="flex flex-col items-center justify-center w-full">
         <div className="max-w-2xl ">
@@ -127,7 +144,7 @@ const Ruleta: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex justify-center w-full mt-5">
+      <div className="flex justify-center w-full mt-10">
         {message && (
           <div className="mt-6 text-2xl font-bold text-green-700">
             {message}
