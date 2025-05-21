@@ -4,53 +4,53 @@ import Confetti from 'react-confetti'
 
 const baseOptions = [
   {
-    option: 'Premio 1',
-    weight: 3,
+    option: '30% de descuento',
+    weight: 1,
     style: { backgroundColor: '#f94144', textColor: '#ffffff' }
   },
   {
-    option: 'Premio 2',
-    weight: 2,
+    option: '20% de descuento',
+    weight: 1,
     style: { backgroundColor: '#f3722c', textColor: '#ffffff' }
   },
   {
-    option: 'Premio 3',
-    weight: 1,
+    option: '2x1 en productos',
+    weight: 2,
     style: { backgroundColor: '#f8961e', textColor: '#ffffff' }
   },
   {
-    option: 'Premio 4',
-    weight: 1,
+    option: '10% de descuento',
+    weight: 2,
     style: { backgroundColor: '#f9844a', textColor: '#ffffff' }
   },
   {
-    option: 'Premio 5',
+    option: '25% de descuento',
     weight: 1,
     style: { backgroundColor: '#f9c74f', textColor: '#ffffff' }
   },
   {
-    option: 'Premio 6',
+    option: '15% de descuento ',
     weight: 1,
     style: { backgroundColor: '#90be6d', textColor: '#ffffff' }
   },
   {
-    option: 'Premio 7',
+    option: '50% de descuento  ',
     weight: 1,
     style: { backgroundColor: '#43aa8b', textColor: '#ffffff' }
   },
   {
-    option: 'Premio 8',
-    weight: 1,
+    option: '5% de descuento',
+    weight: 3,
     style: { backgroundColor: '#577590', textColor: '#ffffff' }
   },
   {
-    option: 'Premio 9',
+    option: 'Envío gratuito',
     weight: 1,
     style: { backgroundColor: '#277da1', textColor: '#ffffff' }
   },
   {
-    option: 'Premio 10',
-    weight: 1,
+    option: '¡Vuelve a girar la ruleta!',
+    weight: 3,
     style: { backgroundColor: '#7209b7', textColor: '#ffffff' }
   }
 ]
@@ -132,6 +132,7 @@ const Ruleta: React.FC = () => {
             innerRadius={2}
             radiusLineColor="#ffffff"
             radiusLineWidth={1}
+            fontSize={12}
           />
           <div className="flex justify-end w-full">
             <button
